@@ -25,10 +25,10 @@ function inForm() {
   }
   
 }
-function onFormSubmit(evt) {
-  evt.preventDefault();
+function onFormSubmit(e) {
+  e.preventDefault();
   const formData = new FormData(form);
   formData.forEach((value, name) => console.log(value, name));
-  evt.currentTarget.reset();
+  e.currentTarget.reset();
   localStorage.removeItem(LOCALSTORAGE_KEY);
 }
