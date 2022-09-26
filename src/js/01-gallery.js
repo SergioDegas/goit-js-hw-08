@@ -22,10 +22,10 @@ const img = galleryItems
   .join('');
 
 gallery.insertAdjacentHTML('afterbegin', img);
-console.log(gallery);
+// console.log(gallery);
 
 let galleryLightbox = new SimpleLightbox('.gallery__link', {
   captionsData: 'alt',
   captionDelay: 250,
 });
-console.log(galleryItems);
+// console.log(galleryItems);
